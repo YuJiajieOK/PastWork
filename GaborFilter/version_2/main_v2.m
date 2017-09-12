@@ -1,0 +1,41 @@
+clear all
+close all
+clc
+
+tic
+
+%I = imread('cameraman.jpg');
+
+I = imread('test.jpg');
+figure
+imshow(I);
+I1 = I(:,:,1);
+I2 = I(:,:,2);
+I3 = I(:,:,3);
+
+f1 = gabor_filter(I3,pi/4);
+f2 = gabor_filter(I3,pi/2);
+f3 = gabor_filter(I3,3*pi/4);
+f4 = gabor_filter(I3,pi);
+ F3 = f1+f2+f3+f4;
+
+f1 = gabor_filter(I2,pi/4);
+f2 = gabor_filter(I2,pi/2);
+f3 = gabor_filter(I2,3*pi/4);
+f4 = gabor_filter(I2,pi);
+% % f6 = gabor_filter(I,pi/3);
+F2 = f1+f2+f3+f4;
+%
+f1 = gabor_filter(I1,pi/4);
+f2 = gabor_filter(I1,pi/2);
+f3 = gabor_filter(I1,3*pi/4);
+f4 = gabor_filter(I1,pi);
+ F1 = f1+f2+f3+f4;
+ 
+ I(:,:,1) = F1;
+ I(:,:,2) = F2;
+ I(:,:,3) = F3;
+figure
+imshow(I,[]);
+
+toc
