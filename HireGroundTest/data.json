@@ -1,0 +1,59 @@
+{"hrJson" :{
+   "GivenName" : {
+     "type" : "string"
+    },
+    "FamilyName": {
+       "type" : "string"
+    },
+    "FormattedName": {
+       "type" : "string"
+    },
+    "Address": {
+       "type" : "array",
+    "items":{
+    "type":"object",
+    "properties":{
+      "CountryCode":{
+         "type":"string",
+         "pattern":"^[A-Z]{2}$"
+         },
+       "CountrySubDivisionCode":{
+        "type":"string"
+       },
+       "CityName":{
+         "type":"string"
+       },
+       "PostalCode":{
+        "type":"string"
+        },
+        "Addressline":{
+          "type":"string"
+         }
+        }
+       }
+      },
+      "Phone":{
+        "type":"array",
+        "items":{
+         "type":"object",
+         "properties":{
+          "Number":{
+            "type":"string"
+           }
+          }
+         }
+        },
+        "Email":{
+         "type":"array",
+         "items":{
+          "type":"object",
+          "properties":{
+           "Address":{
+             "description":"Actrual email address",
+             "type":"string"
+            }
+           }
+          }
+         }
+  }
+}

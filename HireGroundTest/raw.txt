@@ -1,0 +1,4 @@
+John Smith
+Tel: 587 778 1234
+Email: john.smith@gmail.com
+Address: 97 Hidden Creek Spring, Calgary, NW, Canada. T3A7N5

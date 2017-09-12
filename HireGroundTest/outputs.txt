@@ -1,0 +1,1 @@
+{"hrJson": {"FamilyName": ["Smith"], "Email": [[{"Address": " john.smith@gmail.com"}]], "Address": {"Addressline": [" 97 Hidden Creek Spring, Calgary, NW, Canada"], "PostalCode": [" T3A7N5"], "CountryCode": ["CA"]}, "Phone": [[{"Number": " 587 778 1234"}]]}}
